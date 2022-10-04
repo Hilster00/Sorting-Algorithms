@@ -1,7 +1,7 @@
 void InsertSort(int *vetor,int fim){
     int i,j;
     int *temp,*anterior;
-    for(i=1;i<fim;i++){
+    for(i=1;i<fim+1;i++){
         j=i;
         temp=vetor+i;
         anterior=temp-1;
@@ -13,6 +13,5 @@ void InsertSort(int *vetor,int fim){
             anterior--;
             j--;
         }
-        
     }
 }
