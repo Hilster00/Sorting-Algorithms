@@ -12,8 +12,6 @@ for i in range(0,tamanho):
     vetores[0].append(random.randint(0,tamanho))
     vetores[1].append(random.randint(0,tamanho))
     vetores[2].append(random.randint(0,tamanho))
-    
-    
 
 #onrdenando vetores
 
