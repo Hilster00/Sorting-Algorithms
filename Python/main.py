@@ -1,6 +1,6 @@
 import random
 import QuickSort
-import InsertionSort
+import InsertSort
 import MergeSort
 
 vetores=[[],[],[]]
@@ -17,8 +17,8 @@ for i in range(0,tamanho):
 
 #ordenando sublista 0 pelo metodo InsertionSort
 print(f"Vetor desordenado:{vetores[0]}")
-InsertionSort.InsertionSort(vetores[0])
-print(f"Vetor ordenado InsertionSort:{vetores[0]}")
+InsertSort.InsertionSort(vetores[0])
+print(f"Vetor ordenado InsertSort:{vetores[0]}")
 
 #ordenando sublista 0 pelo metodo MergeSort
 print(f"Vetor desordenado:{vetores[1]}")
