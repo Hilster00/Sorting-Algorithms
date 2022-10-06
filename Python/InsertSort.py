@@ -1,4 +1,4 @@
-def InsertionSort(vetor):
+def InsertSort(vetor):
     for i in range(0,len(vetor)):
         key=vetor[i]#guarda vetor[i] em uma chave
         
