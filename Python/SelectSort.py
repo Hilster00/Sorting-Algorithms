@@ -1,6 +1,7 @@
 def SelectSort(vetor,inicio=0,fim=None):
     if fim == None:
-        fim=len(vetor)
+        fim=len(vetor)-1
+    fim+=1
     for i in range(inicio,fim):
         menor=vetor[i]
         posicao=i
