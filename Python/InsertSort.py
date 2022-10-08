@@ -1,7 +1,7 @@
 def InsertSort(vetor,inicio=0,fim=None):
     if fim == None:
-        fim=len(vetor)
-    for i in range(inicio,fim):
+        fim=len(vetor)-1
+    for i in range(inicio,fim+1):
         key=vetor[i]#guarda vetor[i] em uma chave
         
         #move valores > key para a direita
