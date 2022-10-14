@@ -10,4 +10,6 @@ def BorderSort(vetor,inicio=0,fim=None):
             elif vetor[j] > vetor[posicao_maior]:
                 posicao_maior=j
         vetor[i],vetor[posicao_menor] = vetor[posicao_menor],vetor[i]
+        if i == posicao_maior:
+            posicao_maior=posicao_menor
         vetor[fim-k],vetor[posicao_maior] = vetor[posicao_maior],vetor[fim-k]
