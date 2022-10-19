@@ -10,3 +10,6 @@ def SelectSort(vetor,inicio=0,fim=None):
                 menor=vetor[j]
                 posicao=j
         vetor[i],vetor[posicao] = vetor[posicao],vetor[i]
+
+        
+        
