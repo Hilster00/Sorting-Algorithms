@@ -4,12 +4,16 @@ void InsertSort(int *vetor,int fim){
     for(i=1;i<fim+1;i++){
         j=i;
         temp=vetor+i;
-        while(j>0 && *temp<*(temp - 1)){
-            *temp=*temp+*(temp - 1);
-            *(temp - 1)=*temp-*(temp - 1);
-            *temp=*temp-*(temp - 1);
-            temp--;
-            j--;
+        while(j>0){
+            if(*temp<*(temp - 1)){
+                *temp=*temp+*(temp - 1);
+                *(temp - 1)=*temp-*(temp - 1);
+                *temp=*temp-*(temp - 1);
+                temp--;
+                j--;
+            }else{
+                break;
+            }
         }
     }
 }
